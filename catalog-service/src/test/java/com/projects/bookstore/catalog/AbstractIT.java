@@ -17,5 +17,4 @@ public abstract class AbstractIT {
     void setup() {
         RestAssured.port = port;
     }
-
 }

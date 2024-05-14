@@ -9,5 +9,4 @@ public class ProductNotFoundException extends Exception {
     public static ProductNotFoundException forCode(String code) {
         return new ProductNotFoundException("Product with code " + code + " not found");
     }
-
 }

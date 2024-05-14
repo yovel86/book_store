@@ -1,9 +1,8 @@
 package com.projects.bookstore.catalog.web.exceptions;
 
+import com.projects.bookstore.catalog.domain.ProductNotFoundException;
 import java.net.URI;
 import java.time.Instant;
-
-import com.projects.bookstore.catalog.domain.ProductNotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ProblemDetail;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -39,5 +38,4 @@ class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
         problemDetail.setProperty("timestamp", Instant.now());
         return problemDetail;
     }
-
 }
